@@ -13,4 +13,37 @@ It uses an ESP32-based sensor node to collect temperature, humidity, hive weight
 - Stores and analyzes data for beekeeping insights
 - Supports AI-based monitoring for early detection of unusual hive behavior
 
+## Hardware
 
+ESP32 — Sensor processing and Wi-Fi communication
+
+DHT22 — Temperature and humidity
+
+Load Cell + HX711 — Hive weight measurement
+
+INMP441 — Digital acoustic monitoring
+
+
+## AI Pipeline
+INMP441
+   ↓
+Audio Samples
+   ↓
+Preprocessing / MFCC
+   ↓
+ML Model
+   ↓
+Bee Activity / Anomaly Detection
+
+## Circuit Diagram
+![Circuit Diagram](./docs/circuit-diagram.png) 
+
+
+## Flowchart
+![Flow Chart](./docs/system-architecture.png)
+
+## Contributors
+* Shivam Shetty
+* Poornananda
+* Shreya S Naik
+* Prerana Shetty
